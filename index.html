@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angebot Reise-App MVP</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--text:#1d1d1b;--muted:#6b6b66;--line:#e4e3de;--accent:#1f6f5c;--accent-soft:#e3f1ec;--warn:#9a5b00;--warn-soft:#fbf0dc;--bar1:#c9c8c1}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--card:#1f1f1d;--text:#ecebe6;--muted:#a3a29b;--line:#34332f;--accent:#5cc2a4;--accent-soft:#1d332c;--warn:#e7b25c;--warn-soft:#352a17;--bar1:#4a4944}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:1.9rem;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:1.25rem;margin:40px 0 14px}
+h3{margin:0 0 10px;font-size:1.05rem}
+.sub{color:var(--muted);margin:0 0 24px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:8px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi b{display:block;font-size:1.4rem;margin-top:4px}
+.kpi span{color:var(--muted);font-size:.85rem}
+.kpi.hl{border-color:var(--accent);background:var(--accent-soft)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.table-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td small{color:var(--muted);display:block;margin-top:2px}
+tfoot td{font-weight:700;border-bottom:none}
+tr.sum td{border-top:2px solid var(--line)}
+.pill{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:600;white-space:nowrap}
+ul{margin:0;padding-left:20px}li{margin:6px 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.warn{background:var(--warn-soft);border-color:transparent}.warn h3{color:var(--warn)}
+.timeline{display:grid;grid-template-columns:140px 1fr;gap:6px 12px;align-items:center;font-size:.9rem}
+.track{position:relative;height:18px;background:var(--line);border-radius:4px}
+.track i{position:absolute;top:0;bottom:0;background:var(--accent);border-radius:4px}
+.months{display:grid;grid-template-columns:repeat(8,1fr);font-size:.75rem;color:var(--muted);grid-column:2}
+.foot{color:var(--muted);font-size:.85rem;margin-top:32px}
+.draft{display:inline-block;font-size:.75rem;padding:2px 8px;border:1px solid var(--line);border-radius:99px;color:var(--muted);margin-bottom:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<span class="draft">Entwurf · Stand 29.09.2026</span>
+<h1>Angebot: Reise-App MVP</h1>
+<p class="sub">MFY Consulting UG · für: <b>[Kundenname]</b><br>Zentraler Reiseplaner mit KI-Tagesplanung und Buchungsanbindung. App für iOS und Android. Umsetzung durch einen erfahrenen Entwickler mit KI-gestützter Entwicklung, vor Ort oder remote nach Absprache.</p>
+
+<div class="meta">
+  <div class="kpi hl"><span>Festpreis Phase 1</span><b>17.920 €</b><span>netto, zzgl. MwSt.</span></div>
+  <div class="kpi"><span>Aufwand</span><b>32 Tage</b><span>Vollzeit, Arbeitstage</span></div>
+  <div class="kpi"><span>Laufzeit</span><b>7–8 Wochen</b><span>Vollzeit, inkl. Store-Prüfung</span></div>
+  <div class="kpi"><span>Zahlung</span><b>5 Raten</b><span>gekoppelt an Meilensteine</span></div>
+</div>
+
+<h2>Meilensteine und Leistungen</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Meilenstein</th><th>Leistungen</th><th>Zeitraum</th><th class="n">Tage</th><th class="n">Betrag</th></tr></thead>
+<tbody>
+<tr><td><b>M1</b> Konzept &amp; Design</td><td>Anforderungen, User Flows, Recherche und Anträge für Buchungs-APIs (Duffel, Booking.com, GetYourGuide), UI/UX-Design aller Screens<small>Abnahme: Klickbarer Prototyp</small></td><td><span class="pill">Woche 1–2</span></td><td class="n">7</td><td class="n">3.920 €</td></tr>
+<tr><td><b>M2</b> Grundgerüst &amp; Profil</td><td>App- und Backend-Setup, Login, Datenbank, Nutzerprofil mit Reisetyp (privat/geschäftlich), Essenswünschen, Lieblingsrestaurants und Sonderwünschen<small>Abnahme: Testversion mit Profil</small></td><td><span class="pill">Woche 2–3</span></td><td class="n">5</td><td class="n">2.800 €</td></tr>
+<tr><td><b>M3</b> KI-Reiseplaner</td><td>Eingabe von Stadt/Region, Dauer und Interessen; KI erstellt individuellen Tagesplan mit echten Orten (Google Places); Plan bearbeiten und neu generieren<small>Abnahme: Funktionierender Planer</small></td><td><span class="pill">Woche 3–4</span></td><td class="n">8</td><td class="n">4.480 €</td></tr>
+<tr><td><b>M4</b> Buchungsanbindungen</td><td>Flugsuche und -buchung über Duffel; Hotels und Aktivitäten (Touren, Museen, Zoo) über Affiliate-Links; Anreise mit Auto per Routenplanung<small>Abnahme: Buchungsstrecken im Test</small></td><td><span class="pill">Woche 5–6</span></td><td class="n">6</td><td class="n">3.360 €</td></tr>
+<tr><td><b>M5</b> Übersicht, Test &amp; Launch</td><td>Reiseübersicht mit Tagesablauf, Push-Erinnerungen, Testing und Bugfixing, Veröffentlichung im App Store und bei Google Play<small>Abnahme: Apps live in beiden Stores</small></td><td><span class="pill">Woche 6–7</span></td><td class="n">6</td><td class="n">3.360 €</td></tr>
+</tbody>
+<tfoot><tr class="sum"><td colspan="3">Summe netto</td><td class="n">32</td><td class="n">17.920 €</td></tr>
+<tr><td colspan="4" style="font-weight:400;color:var(--muted)">zzgl. 19 % MwSt.</td><td class="n" style="font-weight:400;color:var(--muted)">3.404,80 €</td></tr>
+<tr><td colspan="4">Summe brutto</td><td class="n">21.324,80 €</td></tr></tfoot>
+</table>
+</div>
+
+<h2>Zeitplan</h2>
+<div class="card">
+<div class="timeline">
+<div></div><div class="months"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></div>
+<div>M1 Konzept &amp; Design</div><div class="track"><i style="left:0;width:17.5%"></i></div>
+<div>M2 Grundgerüst</div><div class="track"><i style="left:17.5%;width:12.5%"></i></div>
+<div>M3 KI-Planer</div><div class="track"><i style="left:30%;width:20%"></i></div>
+<div>M4 Buchungen</div><div class="track"><i style="left:50%;width:15%"></i></div>
+<div>M5 Test &amp; Launch</div><div class="track"><i style="left:65%;width:15%"></i></div>
+<div>Store-Prüfung</div><div class="track"><i style="left:80%;width:10%;opacity:.45"></i></div>
+</div>
+</div>
+
+<h2>Zahlungsplan</h2>
+<div class="table-wrap">
+<table style="min-width:520px">
+<thead><tr><th>Rate</th><th>Fällig bei</th><th class="n">Anteil</th><th class="n">Netto</th><th class="n">Brutto</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Auftragserteilung</td><td class="n">20 %</td><td class="n">3.584,00 €</td><td class="n">4.264,96 €</td></tr>
+<tr><td>2</td><td>Abnahme M1 (Prototyp)</td><td class="n">15 %</td><td class="n">2.688,00 €</td><td class="n">3.198,72 €</td></tr>
+<tr><td>3</td><td>Abnahme M3 (KI-Planer)</td><td class="n">25 %</td><td class="n">4.480,00 €</td><td class="n">5.331,20 €</td></tr>
+<tr><td>4</td><td>Abnahme M4 (Buchungen)</td><td class="n">20 %</td><td class="n">3.584,00 €</td><td class="n">4.264,96 €</td></tr>
+<tr><td>5</td><td>Launch in den App Stores</td><td class="n">20 %</td><td class="n">3.584,00 €</td><td class="n">4.264,96 €</td></tr>
+</tbody>
+<tfoot><tr class="sum"><td colspan="2">Gesamt</td><td class="n">100 %</td><td class="n">17.920,00 €</td><td class="n">21.324,80 €</td></tr></tfoot>
+</table>
+</div>
+
+<h2>Rahmenbedingungen</h2>
+<div class="grid2">
+<div class="card">
+<h3>Nicht im Festpreis enthalten</h3>
+<ul>
+<li>Laufende Kosten: KI-API, Google Maps/Places, Hosting (ca. 100–500 €/Monat)</li>
+<li>Store-Gebühren: Apple 99 $/Jahr, Google 25 $ einmalig</li>
+<li>Rechtsberatung (Pauschalreiserecht, AGB, Datenschutz)</li>
+<li>Inhalte, Logo und Markenauftritt</li>
+<li>Leistungen aus Phase 2</li>
+</ul>
+</div>
+<div class="card">
+<h3>Optional: Phase 2 (separates Angebot)</h3>
+<ul>
+<li>Direktbuchung mit Zahlung in der App (Stripe), Stornierung</li>
+<li>Mietwagen, Transfer, Taxi, Tourguide</li>
+<li>Restaurantreservierungen</li>
+<li>Funktionen für Geschäftsreisen (Belege, Kostenstelle, Export)</li>
+<li>Geschätzt ca. 40–45 Tage</li>
+</ul>
+</div>
+</div>
+
+<div class="card warn" style="margin-top:12px">
+<h3>Hinweise</h3>
+<ul>
+<li>Umsetzung in Vollzeit direkt nach Auftragserteilung. Anträge bei Buchungspartnern werden in Woche 1 gestellt; deren Freigaben liegen nicht in unserer Hand und können M4 verschieben.</li>
+<li>Sonderwünsche der Nutzer werden gespeichert und an Partner weitergegeben; die Umsetzung erfolgt durch den jeweiligen Anbieter.</li>
+<li>Änderungen am Leistungsumfang werden nach Aufwand abgerechnet oder in Phase 2 aufgenommen.</li>
+<li>Mit Abnahme der jeweiligen Phase ist der vereinbarte Leistungsumfang abgeschlossen. Weitere Arbeiten danach (Anpassungen, Erweiterungen, Wartung, Support) werden zusätzlich berechnet.</li>
+</ul>
+</div>
